@@ -1,27 +1,52 @@
-# React + TypeScript + Vite
+# Worker List Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This application allows users to manage a list of workers, including adding, editing, deleting, and viewing worker details.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Application Flow](#application-flow)
+- [Screenshots](#screenshots)
+- [Technologies Used](#technologies-used)
+- [License](#license)
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Add new workers with details like first name, last name, position, and email.
+- Edit existing worker details.
+- Delete workers.
+- View worker details by clicking on their email.
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+1. Clone the repository:
+
 ```
+git clone <repository-url>
+cd worker-list-management-app
+````
+Install dependencies:
+Copy code
+````
+npm install
+````
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Run the application:
+````
+npm start
+````
+The app will be running at http://localhost:3000.
+
+Application Flow
+Describe the flow of the application, how the different components interact, and the overall user experience.
+
+
+Technologies Used
+React
+Axios
+CSS
+License
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
